@@ -1,0 +1,11 @@
+
+all: install
+
+instal:
+	cp ./VimrCool ~/.vimrc
+	cp -r /Vim ~/.vim
+
+save:
+	cp ~/.vimrc ./VimrCool
+	cp -r ~/.vim ./Vim
+
