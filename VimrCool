@@ -3,20 +3,34 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 execute pathogen#infect()
-syntax on
+"syntax on
 
 " Colors {{{
 syntax enable
 set background=dark
-"colorscheme solarized
+colorscheme solarized
+
+" fold colors
+highlight Folded cterm=none ctermbg=none ctermfg=4
+highlight FoldColumn cterm=none ctermbg=none ctermfg=4
+
+" keep cursor column last so it overrides all others
+highlight CursorColumn cterm=none ctermbg=Black
+highlight CursorLine cterm=none ctermbg=Black
+
 "}}}
 
 " UI {{{
+
 set number              " show line numbers
-"set cursorline          " highlight current line
 filetype indent on      " load filetype-specific indent files
 set wildmenu            " visual autocomplete for command menu
 set showmatch           " highlight matching [{()}]
+
+" highlight position of cursor
+set cursorline
+set cursorcolumn
+
 "}}}
 
 " Search {{{
