@@ -1,3 +1,4 @@
+#Make file for VimrCool
 
 all: uninstall install
 
